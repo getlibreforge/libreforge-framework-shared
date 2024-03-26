@@ -1,0 +1,22 @@
+export enum InspectorControlEnum {
+    ChildrenControl,
+    ColorPickerControl,
+    ColorsControl,
+    FormControls,
+    GradientControls,
+    IconControl,
+    NumberControl,
+    SizeControl,
+    ImageSourceControl,    
+    SwitchControl,
+    TextControl,
+    VariantsControl,
+    OrientationControl,
+    DictionaryChangeControl,
+    ActionChangeControl,
+    ComponentNameControl,
+    PageSelectControl,
+    PageComponentSelectControl,
+    ValidationControl,
+  }
+  
