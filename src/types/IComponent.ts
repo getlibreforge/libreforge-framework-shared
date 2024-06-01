@@ -1,6 +1,6 @@
 import {ReactElement, ReactNode} from 'react';
 
-export type ComponentCategory = 'layout' | 'basic' | 'fields' | 'forms' | 'wizard' | 'tools' | 'experimental'
+export type ComponentCategory = 'layout' | 'basic' | 'fields' | 'forms' | 'wizard' | 'tools' | 'blocks'
 
 export type ComponentType = string;
 
