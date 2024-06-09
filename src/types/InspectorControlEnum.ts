@@ -2,6 +2,7 @@ export enum InspectorControlEnum {
     ChildrenControl,
     ColorPickerControl,
     ColorsControl,
+    BusinessRulesControl,
     FormControls,
     GradientControls,
     IconControl,

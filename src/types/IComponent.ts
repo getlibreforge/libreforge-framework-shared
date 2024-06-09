@@ -4,6 +4,12 @@ export type ComponentCategory = 'layout' | 'basic' | 'fields' | 'forms' | 'wizar
 
 export type ComponentType = string;
 
+export interface IBusinessRule {
+  message: string
+  severity: 'error' | 'warning'
+  script: string
+}
+
 export interface IComponent {
   children: string[];
   type: ComponentType;
@@ -12,6 +18,11 @@ export interface IComponent {
   props: any;
   rootParentType?: ComponentType;
   componentName?: string;
+  rules: IBusinessRules;
+}
+
+export interface IBusinessRules {
+  [name: string]: IBusinessRule;
 }
 
 export interface IComponents {
