@@ -4,6 +4,20 @@ export type ComponentCategory = 'layout' | 'basic' | 'fields' | 'forms' | 'wizar
 
 export type ComponentType = string;
 
+export interface IActionParams {
+  [paramIndex: number]: any;
+}
+
+export interface IAction {
+  action: string;
+  params: IActionParams;
+  prevActionIndex: string;
+}
+
+export interface IActionGroup {
+  [actionIndex: number]: IAction;
+}
+
 export interface IBusinessRule {
   message: string
   severity: 'error' | 'warning'
@@ -19,6 +33,7 @@ export interface IComponent {
   rootParentType?: ComponentType;
   componentName?: string;
   rules: IBusinessRules;
+  actionGroup: IActionGroup;
 }
 
 export interface IBusinessRules {
