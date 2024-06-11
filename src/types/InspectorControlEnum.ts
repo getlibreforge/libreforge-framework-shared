@@ -1,4 +1,5 @@
 export enum InspectorControlEnum {
+    ActionGroupControl,
     ChildrenControl,
     ColorPickerControl,
     ColorsControl,

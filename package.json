@@ -1,6 +1,6 @@
 {
   "name": "@libreforge/libreforge-framework-shared",
-  "version": "1.0.20",
+  "version": "1.0.22",
   "description": "``` npm login npm whoami",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
