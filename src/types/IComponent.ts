@@ -5,17 +5,16 @@ export type ComponentCategory = 'layout' | 'basic' | 'fields' | 'forms' | 'wizar
 export type ComponentType = string;
 
 export interface IActionParams {
-  [paramIndex: number]: any;
+  [name: string]: any;
 }
 
 export interface IAction {
   action: string;
   params: IActionParams;
-  prevActionIndex: string;
 }
 
 export interface IActionGroup {
-  [actionIndex: number]: IAction;
+  [idx: string]: IAction;
 }
 
 export interface IBusinessRule {
